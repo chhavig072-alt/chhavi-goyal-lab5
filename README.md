@@ -1,4 +1,6 @@
 # chhavi-goyal-lab5
+Here is loom link of me Walking through my code, explain the logic and functions, show the file structure, and run the program to display the output. -
+https://www.loom.com/share/974f99201c6a432f9f7e50479530dcbc
 # 🛍️ RUMO – Modern E-Commerce UI
 
 RUMO is a sleek, modern, and fully responsive **static e-commerce user interface** built using **HTML and CSS **. It features a dark futuristic theme, smooth hover effects, glowing product cards, and a clean shopping experience design.
