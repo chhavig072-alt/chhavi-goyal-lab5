@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0f;
+    color: #e5e7eb;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    /* ✅ PREVENTS LEFT–RIGHT SCROLL */
+}
+
+a {
+    color: #9ca3af;
+    text-decoration: none;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+/* ================= HEADER ================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background: #050508;
+    flex-wrap: wrap;
+    /* ✅ prevents horizontal overflow */
+}
+
+.brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #00f7ff;
+    text-shadow: 0 0 15px #00f7ff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* ✅ responsive fix */
+    gap: 8px;
+}
+
+nav a:hover {
+    color: #00f7ff;
+}
+
+/* ✅ SMALL ICON BUTTONS */
+.nav-btn {
+    padding: 4px 8px;
+    /* ✅ smaller size */
+    font-size: 14px;
+    /* ✅ icon size controlled */
+    background: transparent;
+    border: 1px solid #00f7ff;
+    color: #00f7ff;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-btn {
+    border-color: #ff3cac;
+    color: #ff3cac;
+}
+
+/* ================= HERO ================= */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* ✅ SPACE ISSUE FIXED IN IMAGE PATH */
+    background: url("Collage laptop wallpaper.jpg") center/cover no-repeat;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.neon-text {
+    color: #00f7ff;
+    text-shadow: 0 0 12px #00f7ff;
+}
+
+.explore-btn {
+    margin-top: 16px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #ff3cac;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ================= MAIN LAYOUT ================= */
+main {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+    padding: 40px 32px;
+}
+
+aside {
+    background: #12121b;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+aside h2 {
+    color: #7c7cff;
+}
+
+/* ================= PRODUCT GRID ================= */
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+article {
+    background: #12121b;
+    padding: 18px;
+    border-radius: 16px;
+}
+
+/* ✅ IMAGE SAFETY FIX */
+article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #ff3cac;
+}
+
+article button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+/* ================= PRODUCT DETAIL ================= */
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 40px 32px;
+}
+
+/* ✅ PRODUCT DETAIL IMAGE FIX */
+.product-detail img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.detail-box {
+    background: #12121b;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    background: #12121b;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #050508;
+    color: #9ca3af;
+    padding: 40px 32px 20px;
+    font-size: 14px;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+.footer-column h4 {
+    color: #00f7ff;
+    margin-bottom: 12px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: #ff3cac;
+}
+
+.footer-column p {
+    margin: 6px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #222;
+    padding-top: 12px;
+    font-size: 12px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-bottom .social-icons a {
+    margin-left: 12px;
+    color: #9ca3af;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer-bottom .social-icons a:hover {
+    color: #ff3cac;
+}
+
+
+
+/* ================= PRODUCT CARD HOVER GLOW ================= */
+article {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff, 0 0 45px #00f7ff;
+}
+
+/* Optional: hover for Add to Cart button */
+article button:hover {
+    background: #00f7ff;
+    color: #050508;
+    box-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+}
+
+/* ================= PRODUCT DETAIL HOVER GLOW ================= */
+.product-detail img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-detail img:hover {
+    transform: scale(1.05);
+    /* slightly zoom on hover */
+    box-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff, 0 0 60px #00f7ff;
+}
+
+.detail-box button {
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-box button:hover {
+    background: #00f7ff;
+    color: #050508;
+    box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:1024px) {
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media(max-width:768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-detail {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:600px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media(max-width:480px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 12px;
+    }
+
+    .brand {
+        font-size: 20px;
+    }
+}
